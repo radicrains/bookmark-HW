@@ -8,8 +8,8 @@ require('dotenv').config();
 
 
 //Environment Viariables
-const mongoDB=process.env.MONGO_URI || 'mongodb://localhost:27017/bookmark';
-const PORT = process.env.PORT || 5000;
+const mongoDB=process.env.MONGO_URI;
+const PORT = process.env.PORT;
 
 //Connection to Mongoose
 mongoose.connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology: true}, () => {
